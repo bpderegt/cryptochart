@@ -41,6 +41,7 @@ class DateForm extends React.Component {
   }
 
   render() {
+    // deconstruct state -brian
     return (
       <div>
         <div>Enter in the format yyyy-mm-dd!</div>

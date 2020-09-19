@@ -70,6 +70,8 @@ class App extends React.Component {
   };
 
   render() {
+    // deconstruct state -brian
+    // ex: const { dates, prices } = this.state;
     return (
       <div>
         <ChartView dates={this.state.dates} prices={this.state.prices} />

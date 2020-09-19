@@ -4,6 +4,8 @@ import { Line } from 'react-chartjs-2';
 
 // deconstruct props -brian
 const ChartView = (props) => {
+  // deconstruct props -brian
+  // ex: const { dates, prices } = this.props;
   // let or const -brian
   var data = {
     labels: props.dates,
