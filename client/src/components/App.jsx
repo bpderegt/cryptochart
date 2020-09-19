@@ -12,12 +12,16 @@ class App extends React.Component {
       dates: [],
       prices: []
     };
+    // no binding of methods -brian
   }
 
   setTodayDate() {
+    // avoid single letter variable names -brian
+    // let or const -brian
     var d = new Date();
     var today = d.toJSON().substring(0, 10)
     this.setState({ endDate: today }, () => {
+      // once you know this is working, drop all console.logs -brian
       console.log('endDate set to today');
       this.getBitcoinData();
     })
@@ -25,6 +29,7 @@ class App extends React.Component {
 
   setNewDates(newStart, newEnd) {
     this.setState({ startDate: newStart, endDate: newEnd }, () => {
+      // once you know this is working, drop all console.logs -brian
       console.log('new dates set');
       this.getBitcoinData();
     });
@@ -46,13 +51,16 @@ class App extends React.Component {
   }
 
   processData(data) {
+    // let or const -brian
     var dateArr = [];
     var priceArr = [];
+    // let or const -brian
     for (var key in data) {
       dateArr.push(key);
       priceArr.push(data[key]);
     }
     this.setState({ dates: dateArr, prices: priceArr }, () => {
+      // once you know this is working, drop all console.logs -brian
       console.log('dates & prices have been populated');
     })
   }

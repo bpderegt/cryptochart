@@ -23,6 +23,7 @@ class DateForm extends React.Component {
   }
 
   handleSubmit(event) {
+    // let or const -brian
     var start = moment(this.state.startDate, "YYYY-MM-DD", true);
     var end = moment(this.state.endDate, "YYYY-MM-DD", true);
     if (start.diff(moment("2010-07-17", "YYYY-MM-DD", true), 'days') < 0) {

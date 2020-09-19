@@ -2,8 +2,9 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 
 
-
+// deconstruct props -brian
 const ChartView = (props) => {
+  // let or const -brian
   var data = {
     labels: props.dates,
     datasets: [
@@ -22,6 +23,7 @@ const ChartView = (props) => {
     <div>
       <Line
         data={data}
+        // seems like we could build this external to the actual component -brian
         options={{
           title: {
             display: true,
